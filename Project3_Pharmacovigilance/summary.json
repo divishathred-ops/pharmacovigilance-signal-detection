@@ -1,0 +1,37 @@
+{
+  "project": "Pharmacovigilance Signal Detection (FDA FAERS)",
+  "timestamp": "2025-11-15T10:59:51.595542",
+  "dataset": {
+    "name": "FDA Adverse Event Reporting System (FAERS)",
+    "records_analyzed": 100000,
+    "serious_events": 14898,
+    "serious_event_rate_percent": 14.898,
+    "features": 7
+  },
+  "preprocessing": {
+    "categorical_encoding": "LabelEncoder",
+    "missing_value_handling": "Mean Imputation",
+    "scaling": "StandardScaler",
+    "class_imbalance_handling": "SMOTE with class weights",
+    "train_test_split": "80-20 with stratification"
+  },
+  "best_model": "Logistic Regression",
+  "performance": {
+    "auc_roc": 1.0,
+    "f1_score": 1.0,
+    "precision": 1.0,
+    "recall_sensitivity": 1.0,
+    "accuracy": 1.0,
+    "training_time_seconds": 2.0099406242370605
+  },
+  "safety_metrics": {
+    "true_positive_rate": 1.0,
+    "false_positive_rate": 0.0,
+    "signals_caught_percent": 100.0
+  },
+  "efficiency": {
+    "avg_inference_time_ms": 0.2752685546875,
+    "throughput_reports_per_second": 363281.5964523282,
+    "model_size_mb": 4.57763671875e-05
+  }
+}
